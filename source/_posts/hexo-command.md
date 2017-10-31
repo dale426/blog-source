@@ -41,6 +41,29 @@ $ hexo deploy
 
 More info: [Deployment](https://hexo.io/docs/deployment.html)
 
+http://blog.csdn.net/qq_23435721/article/details/50997275
+
+### 添加搜索的方法
+
+``` bash
+npm install hexo-generator-search --save
+```
+
+More info: [站内搜索](http://moxfive.coding.me/yelee/2.Basic-Usage/local-site-search.html)
+More info: [github地址](https://github.com/PaicHyperionDev/hexo-generator-search)
+
+### seo优化
+
+``` bash
+npm install hexo-generator-sitemap --save
+npm install hexo-generator-baidu-sitemap --save
+```
+
+More info: [优化教程](http://blog.csdn.net/qq_23435721/article/details/50997275)
+More info: [优化教程](http://www.jianshu.com/p/86557c34b671)
+More info: [优化教程](http://www.arao.me/2015/hexo-next-theme-optimize-seo/)
+
+
 ### 首页显示tag的两种方法
 
 1. 方法一

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[我忘记了自己，却没忘记你！]]></title>
+      <url>/2017/11/01/tulei-01/</url>
+      <content type="html"><![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有一位老人找不到家了，他连自己的名字也忘记了，民警在他身上找到两样东西，一封40年前他写给爱人的信，和一张17年前爱人离世火化的证明。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;信的落款是1977年4月30日，名字的落款是“生”，信的开头是“亲爱的馨”。根据图片和信的内容来推算，写这封信的时候，他的妻子“馨”应该是43岁。信中所写都是些家长里短，对爱人身体的关心，工作和生活的琐事。唯有信中有两处最感人的地方，一处是对爱人的称呼是<code>“您”</code>，一处是信的结尾，<code>“一切尚好，不要挂念，好好保重身体。”</code>经了解，老人名叫张连生，今年87岁，妻子名叫孙懿馨，2000年离世，享年66岁！</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一封40年前的信，一张17年前的火化证明，张老先生随身携带着这两样东西，尽管年事已高，忘却了很多往事，甚至是回家的路，却始终没忘了自己的爱人！我理解老人随身带着书信，是因为见字如面，但是为什么还带着一纸火化证明？我的妻子说，因为那是他爱人火化之前最后停留的地方！是的，17年前，张老先生看着爱人的遗体即将推进火化炉时，那是他看见爱人的最后一面，所有的爱都定格在了那一刻！从此，一封信，一张火化证明，就成为了爱人的全部，找不到回家的路不要紧，只要这两样东西在，老伴就在，家就在！</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我想，多数人看到这样的故事，都会被深深的感动！因为这样的爱情，如今已经不多见。男人不再长情却多情，女人不再痴情更绝情！我们表达爱情的词汇越来越丰富，方式越来越浪漫，但华丽的背后是苍白！陪伴是最长情的告白！你若不离不弃，我必生死相依！等等，这样的语句无数次感动我们，但感动过后，往往一切照旧！如同此时的正在听故事的你们，也一定感动得<code>潸然泪下</code>，可是泪水过后，又会有多少<code>实质性的改变</code>？</p>
+<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今天我讲述这个故事，并不只是要感动你们，那不是这个故事真正的意义。我想说的是，生活是由普普通通的每一天组成，吃喝拉撒上班下班，枯燥的循环往复是生活的大多数，激情与浪漫只是偶尔的点缀。因为一张火化证明，我们被老人的深情思念所打动，但是要知道，在他爱人逝去的这17年，老先生每天都是这样度过。因为一封书信，我们感动于老人们往日的恩爱如初，但几十年如一日的相敬如宾，我们又能否做到？</p>
+<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>动人的爱情故事往往如此，一日的相爱是平凡，日复一日的相守是经典！观众们热泪盈眶，深受感动，但被感动很容易，要去付出感动对方却很难！主人公却并不觉得这有多么值得歌颂，因为他所做的这一切，既不为了感动对方，也不是为了感动自己，因为，那就是爱情本来的样子，<code>这一切的一切</code>，不为别的，<code>只是因为爱情</code> ！</strong></p>
+<p>本文转载自： <a href="http://mp.weixin.qq.com/s/XeniC_LMro1fYJNrw-h3tg" target="_blank" rel="external">涂磊公众号</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[hexo 命令集合]]></title>
+      <url>/2017/10/31/hexo-command/</url>
+      <content type="html"><![CDATA[<p><contents><br>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</contents></p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div><div class="line">$ hexo s</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="发布-Deploy-to-remote-sites"><a href="#发布-Deploy-to-remote-sites" class="headerlink" title="[发布]Deploy to remote sites"></a>[发布]Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<p><a href="http://blog.csdn.net/qq_23435721/article/details/50997275" target="_blank" rel="external">http://blog.csdn.net/qq_23435721/article/details/50997275</a></p>
+<h3 id="添加搜索的方法"><a href="#添加搜索的方法" class="headerlink" title="添加搜索的方法"></a>添加搜索的方法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-search --save</div></pre></td></tr></table></figure>
+<p>More info: <a href="http://moxfive.coding.me/yelee/2.Basic-Usage/local-site-search.html" target="_blank" rel="external">站内搜索</a><br>More info: <a href="https://github.com/PaicHyperionDev/hexo-generator-search" target="_blank" rel="external">github地址</a></p>
+<h3 id="seo优化"><a href="#seo优化" class="headerlink" title="seo优化"></a>seo优化</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-sitemap --save</div><div class="line">npm install hexo-generator-baidu-sitemap --save</div></pre></td></tr></table></figure>
+<p>More info: <a href="http://blog.csdn.net/qq_23435721/article/details/50997275" target="_blank" rel="external">优化教程</a><br>More info: <a href="http://www.jianshu.com/p/86557c34b671" target="_blank" rel="external">优化教程</a><br>More info: <a href="http://www.arao.me/2015/hexo-next-theme-optimize-seo/" target="_blank" rel="external">优化教程</a></p>
+<h3 id="首页显示tag的两种方法"><a href="#首页显示tag的两种方法" class="headerlink" title="首页显示tag的两种方法"></a>首页显示tag的两种方法</h3><ol>
+<li><p>方法一</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">title: Hello World</div><div class="line">date: 2000-12-03 00:00:00</div><div class="line">---</div><div class="line">&lt;Excerpt in index | 首页摘要&gt; </div><div class="line">+&lt;!-- more --&gt;</div><div class="line">&lt;The rest of contents | 余下全文&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>方法二</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">title: Hello World</div><div class="line">date: 2000-12-03 00:00:00</div><div class="line">+description: &quot;Welcome to Hexo! This is your very first post.&quot;</div><div class="line">---</div><div class="line">&lt;Contents&gt;</div></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[test]]></title>
+      <url>/2017/10/31/hexo/</url>
+      <content type="html"><![CDATA[<contents>
+
+</contents>]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[first- on - githubpage]]></title>
+      <url>/2015/12/03/first-on-hexo/</url>
+      <content type="html"><![CDATA[<p><excerpt in="" index="" |="" 首页摘要=""> </excerpt></p>
+<blockquote>
+<p>第一次搭建博客</p>
+</blockquote>
+<a id="more"></a>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+<h2 id="正文开始、、、"><a href="#正文开始、、、" class="headerlink" title="正文开始、、、"></a>正文开始、、、</h2></the>]]></content>
+      
+        
+        <tags>
+            
+            <tag> tag1 </tag>
+            
+            <tag> tag2 </tag>
+            
+            <tag> tag3 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+  
+  
+</search>

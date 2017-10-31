@@ -31,7 +31,7 @@ favicon: /favicon.ico
 root_url: 
 
 # Year of Site Creation | 网站成立年份
-since: 2016
+since: 2017
 
 # Social info. Bar | 社交信息展示
 ## Keep "mailto:" in Email | 设置 Email 时保留 "mailto:"
@@ -127,9 +127,9 @@ base_font_size: 16  #px, 16 - 24
 color_scheme: 
 
 highlight_style:
-  #on: true
-  inline_code: 1  # Value: 0 - 9 可选
-  code_block: 1  # Value: 0 - 4 
+  on: true
+  inline_code: 2  # Value: 0 - 9 可选   文本高亮
+  code_block: 1  # Value: 0 - 4         主题选择
   # Set inline_code to style highlight text
   # Chose a highlight theme for code block
   # 通过 inline_code 切换内置文本高亮样式
@@ -177,14 +177,14 @@ limit_article_width:
 
 # 是否开启边栏多标签切换
 # Birdhouse button in left column
-tagcloud: true
+tagcloud: false   # 鸟屋
 
 # Blogroll, Link exchange | 友情链接
 friends:
   Hexo: https://hexo.io
   GitHub: https://pages.github.com/
   MOxFIVE: http://moxfive.xyz/
-#friends: false
+# friends: false
 
 #是否开启“关于我”。
 aboutme: 专注于前端
@@ -247,8 +247,8 @@ mathjax: false
 share: 
   on: true
   baidu: true
-  addthis: false
-  addthis_pubid: "ra-56ff76c972fc0cf9"
+  # addthis: true
+  # addthis_pubid: "ra-59f8b5db6206a05a"
   ## Go to www.addthis.com/dashboard to get your pubid (in src of Code)
   ## and customize AddThis share buttons
 
