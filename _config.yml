@@ -84,3 +84,9 @@ deploy:
   #elfwalk改为你的github用户名
   repository: https://github.com/dale426/dale426.github.io
   branch: master
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000

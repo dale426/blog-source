@@ -17,7 +17,7 @@ menu:
 avatar: /img/avatar.png
 
 # Small icon of Your site | 站点小图标地址
-favicon: /favicon.png
+favicon: /favicon.ico
 
 # Internationalization | 主题语言
 ## Change Language in SITE's _config.yml | 在站点配置中切换语言
@@ -230,7 +230,7 @@ tab_title_change:
 ## Insatall below plugin to take effect | 使用搜索需先安装对应插件
 ## https://github.com/PaicHyperionDev/hexo-generator-search
 search: 
-  #on: true
+  on: true
   onload: false
   ## true: get search.xml file when the page has loaded
   ## false: get the file when search box gets focus
