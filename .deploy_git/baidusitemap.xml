@@ -4,13 +4,175 @@
 
     
   <url>
-    <loc>https://dale426.github.io/2017/11/01/tulei-01/</loc>
-    <lastmod>2017-10-31T18:27:59.692Z</lastmod>
+    <loc>https://dale426.github.io/2017/11/10/live-Summer-Remix/</loc>
+    <lastmod>2017-11-10T07:33:46.863Z</lastmod>
+    <data>
+        <display>
+        <title>我和秋天有个约会</title>
+        <pubTime>2017-11-10T07:11:51.000Z</pubTime>
+        
+        <tag>娱乐</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活" url="https://dale426.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dale426.github.io/2017/11/01/live-tulei-01/</loc>
+    <lastmod>2017-11-10T07:14:57.342Z</lastmod>
     <data>
         <display>
         <title>我忘记了自己，却没忘记你！</title>
         <pubTime>2017-10-31T16:00:00.000Z</pubTime>
         
+        <tag>情感</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活" url="https://dale426.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dale426.github.io/2017/11/09/vue-study-03/</loc>
+    <lastmod>2017-11-09T07:15:19.905Z</lastmod>
+    <data>
+        <display>
+        <title>vue组件的使用</title>
+        <pubTime>2017-11-09T07:14:27.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dale426.github.io/2017/11/08/vue-study-02/</loc>
+    <lastmod>2017-11-08T08:21:52.311Z</lastmod>
+    <data>
+        <display>
+        <title>iview组件级联选择器的校验</title>
+        <pubTime>2017-11-08T08:03:39.000Z</pubTime>
+        
+        <tag>iview组件</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue框架" url="https://dale426.github.io/categories/vue%E6%A1%86%E6%9E%B6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dale426.github.io/2017/11/07/vue-study-01/</loc>
+    <lastmod>2017-11-08T07:02:51.904Z</lastmod>
+    <data>
+        <display>
+        <title>vue中的计算属性 computed</title>
+        <pubTime>2017-11-07T11:49:48.000Z</pubTime>
+        
+        <tag>vue知识点</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue框架" url="https://dale426.github.io/categories/vue%E6%A1%86%E6%9E%B6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dale426.github.io/2017/11/08/contribute-word-001/</loc>
+    <lastmod>2017-11-08T03:11:02.255Z</lastmod>
+    <data>
+        <display>
+        <title>每日单词 perception [pə'sepʃ(ə)n]</title>
+        <pubTime>2017-11-08T02:47:45.000Z</pubTime>
+        
+        <tag>单词</tag>
+         
+         
+           
+             
+              <breadCrumb title="每日单词" url="https://dale426.github.io/categories/%E6%AF%8F%E6%97%A5%E5%8D%95%E8%AF%8D/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dale426.github.io/2017/11/07/js-call/</loc>
+    <lastmod>2017-11-08T01:26:16.491Z</lastmod>
+    <data>
+        <display>
+        <title>javascript之call的用法</title>
+        <pubTime>2017-11-07T04:35:00.000Z</pubTime>
+        
+        <tag>js知识点总结</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://dale426.github.io/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dale426.github.io/2017/11/07/array-method-01/</loc>
+    <lastmod>2017-11-08T01:24:26.936Z</lastmod>
+    <data>
+        <display>
+        <title>每个JavaScript程序员都需要知道的5个数组方法</title>
+        <pubTime>2017-11-07T07:16:00.000Z</pubTime>
+        
+        <tag>数组</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://dale426.github.io/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>https://dale426.github.io/2015/12/03/first-on-hexo/</loc>
+    <lastmod>2017-11-02T09:22:07.791Z</lastmod>
+    <data>
+        <display>
+        <title>first- on - githubpage</title>
+        <pubTime>2015-12-02T16:00:00.000Z</pubTime>
+        
+        <tag>tag1</tag>
+         
+        <tag>tag2</tag>
+         
+        <tag>tag3</tag>
+         
          
            
         </display>
@@ -48,27 +210,5 @@
     </url>
 
     
-    
-    
-  <url>
-    <loc>https://dale426.github.io/2015/12/03/first-on-hexo/</loc>
-    <lastmod>2017-10-31T05:53:44.170Z</lastmod>
-    <data>
-        <display>
-        <title>first- on - githubpage</title>
-        <pubTime>2015-12-02T16:00:00.000Z</pubTime>
-        
-        <tag>tag1</tag>
-         
-        <tag>tag2</tag>
-         
-        <tag>tag3</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
 </urlset>

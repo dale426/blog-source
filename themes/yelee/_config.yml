@@ -120,7 +120,7 @@ youyan:
 background_image: 5
 
 # Base Font Size | 字号调节
-base_font_size: 16  #px, 16 - 24
+base_font_size: 14  #px, 16 - 24
 
 ## General Color Scheme | 主题配色方案 
 ## 可用值 Value: yilia
@@ -129,7 +129,7 @@ color_scheme:
 highlight_style:
   on: true
   inline_code: 2  # Value: 0 - 9 可选   文本高亮
-  code_block: 1  # Value: 0 - 4         主题选择
+  code_block: 4  # Value: 0 - 4         主题选择
   # Set inline_code to style highlight text
   # Chose a highlight theme for code block
   # 通过 inline_code 切换内置文本高亮样式
@@ -166,7 +166,7 @@ animate: true
 
 # Load jQuery UI to style tooltips
 # 工具提示框样式美化
-jquery_ui: false
+jquery_ui: true
 
 # Max width of right cloumn | 限制右侧内容的宽带 
 limit_article_width: 

@@ -4,7 +4,7 @@ index:
   tags: 标签
   friends: 友情链接
   about: 关于我
-  more: more
+  more: 好像还不错-查看全文
   copy: 复制
 
 toc:
@@ -39,7 +39,7 @@ tooltip:
   go2bottom: 转到底部
   copyPath: 点击复制文章链接
   Hexo: "快速、简洁且高效的博客框架"
-  Yelee: 简而不减 Hexo 双栏博客主题
+  Yelee: Hexo 双栏博客主题
 
 tag_cloud:
   already: 已有
