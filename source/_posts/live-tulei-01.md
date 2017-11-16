@@ -27,4 +27,4 @@ categories: [生活]
 
 本文转载自： [涂磊公众号](http://mp.weixin.qq.com/s/XeniC_LMro1fYJNrw-h3tg)
 
-<!-- ![图片](/images/mmexport1499932133535.jpeg) -->
+<!-- ![图片](/public_s/images/mmexport1499932133535.jpeg) -->

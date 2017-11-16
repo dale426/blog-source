@@ -4,19 +4,76 @@
 
     
   <url>
-    <loc>https://dale426.github.io/2017/11/10/live-Summer-Remix/</loc>
-    <lastmod>2017-11-10T07:33:46.863Z</lastmod>
+    <loc>https://dale426.github.io/2017/11/14/move-review-liechang/</loc>
+    <lastmod>2017-11-15T08:23:16.290Z</lastmod>
     <data>
         <display>
-        <title>我和秋天有个约会</title>
-        <pubTime>2017-11-10T07:11:51.000Z</pubTime>
+        <title>经过了这么多年的努力，理想终于成了泡影---猎场经典台词</title>
+        <pubTime>2017-11-14T05:33:59.000Z</pubTime>
         
-        <tag>娱乐</tag>
+        <tag>电视剧</tag>
+         
+        <tag>经典台词</tag>
          
          
            
              
-              <breadCrumb title="生活" url="https://dale426.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+              <breadCrumb title="影视" url="https://dale426.github.io/categories/%E5%BD%B1%E8%A7%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dale426.github.io/2017/11/08/vue-study-iview/</loc>
+    <lastmod>2017-11-15T01:58:57.433Z</lastmod>
+    <data>
+        <display>
+        <title>iview组件使用的踩坑记录</title>
+        <pubTime>2017-11-08T08:03:39.000Z</pubTime>
+        
+        <tag>iview组件</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue框架" url="https://dale426.github.io/categories/vue%E6%A1%86%E6%9E%B6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dale426.github.io/2017/11/09/vue-study-03/</loc>
+    <lastmod>2017-11-15T01:44:20.070Z</lastmod>
+    <data>
+        <display>
+        <title>vue组件的使用</title>
+        <pubTime>2017-11-09T07:14:27.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dale426.github.io/2017/11/07/vue-study-computed/</loc>
+    <lastmod>2017-11-15T01:43:10.142Z</lastmod>
+    <data>
+        <display>
+        <title>vue中的计算属性 computed</title>
+        <pubTime>2017-11-07T11:49:48.000Z</pubTime>
+        
+        <tag>vue知识点</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue框架" url="https://dale426.github.io/categories/vue%E6%A1%86%E6%9E%B6/"/>
           
         </display>
     </data>
@@ -25,7 +82,7 @@
     
   <url>
     <loc>https://dale426.github.io/2017/11/01/live-tulei-01/</loc>
-    <lastmod>2017-11-10T07:14:57.342Z</lastmod>
+    <lastmod>2017-11-14T05:54:58.105Z</lastmod>
     <data>
         <display>
         <title>我忘记了自己，却没忘记你！</title>
@@ -44,54 +101,19 @@
 
     
   <url>
-    <loc>https://dale426.github.io/2017/11/09/vue-study-03/</loc>
-    <lastmod>2017-11-09T07:15:19.905Z</lastmod>
+    <loc>https://dale426.github.io/2017/11/10/live-Summer-Remix/</loc>
+    <lastmod>2017-11-14T05:54:47.344Z</lastmod>
     <data>
         <display>
-        <title>vue组件的使用</title>
-        <pubTime>2017-11-09T07:14:27.000Z</pubTime>
+        <title>我和秋天有个约会</title>
+        <pubTime>2017-11-10T07:11:51.000Z</pubTime>
         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dale426.github.io/2017/11/08/vue-study-02/</loc>
-    <lastmod>2017-11-08T08:21:52.311Z</lastmod>
-    <data>
-        <display>
-        <title>iview组件级联选择器的校验</title>
-        <pubTime>2017-11-08T08:03:39.000Z</pubTime>
-        
-        <tag>iview组件</tag>
+        <tag>娱乐</tag>
          
          
            
              
-              <breadCrumb title="vue框架" url="https://dale426.github.io/categories/vue%E6%A1%86%E6%9E%B6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dale426.github.io/2017/11/07/vue-study-01/</loc>
-    <lastmod>2017-11-08T07:02:51.904Z</lastmod>
-    <data>
-        <display>
-        <title>vue中的计算属性 computed</title>
-        <pubTime>2017-11-07T11:49:48.000Z</pubTime>
-        
-        <tag>vue知识点</tag>
-         
-         
-           
-             
-              <breadCrumb title="vue框架" url="https://dale426.github.io/categories/vue%E6%A1%86%E6%9E%B6/"/>
+              <breadCrumb title="生活" url="https://dale426.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
           
         </display>
     </data>
