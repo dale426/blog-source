@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="小虫子426">
 <meta property="og:description" content="级联选择器的校验， 导航Tabs的使用">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-11-15T01:58:57.433Z">
+<meta property="og:updated_time" content="2017-11-16T10:39:55.326Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iview组件使用的踩坑记录">
 <meta name="twitter:description" content="级联选择器的校验， 导航Tabs的使用">
@@ -227,7 +227,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="標籤" friends="友情鏈接" about="關於我"/>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
       <div class="body-wrap"><article id="post-vue-study-iview" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -284,6 +284,19 @@
 
 <p>正确使用姿势：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">Tabs</span> <span class="attr">v-if</span>=<span class="string">"pageName!=='detail'"</span> <span class="attr">type</span>=<span class="string">"card"</span> <span class="attr">class</span>=<span class="string">"wms-mt10 wms-tabs"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">Tab-pane</span> <span class="attr">label</span>=<span class="string">"出库箱信息"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">Tab-pane</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">Tabs</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">"pageName!=='detail'"</span>&gt;</span> <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <p><strong>Tisp：</strong>： 不能将<code>Tabs</code>放在 带有<code>v-if</code>属性的<code>div</code>中</p>
+<p><br></p>
+<h2 id="iview中Model弹窗二次点击依然会关闭问题"><a href="#iview中Model弹窗二次点击依然会关闭问题" class="headerlink" title="iview中Model弹窗二次点击依然会关闭问题"></a>iview中Model弹窗二次点击依然会关闭问题</h2><div style="color: #808080; font-size: 12px; text-align: right">2017-11-16 18:39:55 </div>
+
+<p> 确定按钮点击 –会自动关闭<code>Model</code>, 添加属性 <code>:loading</code>后需要在<code>@on-ok</code>事件中手动去设置关闭<br> Tips: <code>:loading</code>初始值为要设置为 <code>true</code><br> <strong>问题：</strong> 首次点击未手动设置model关闭， 再次点击依然会自动关闭？<br> 场景：</p>
+<blockquote>
+<p>html</p>
+</blockquote>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">Modal</span></span></div><div class="line"><span class="tag">    <span class="attr">v-model</span>=<span class="string">"syncUploadPop"</span></span></div><div class="line"><span class="tag">    <span class="attr">title</span>=<span class="string">"title"</span></span></div><div class="line"><span class="tag">    <span class="attr">width</span>=<span class="string">"400"</span></span></div><div class="line"><span class="tag">    <span class="attr">:mask-closable</span>=<span class="string">"false"</span></span></div><div class="line"><span class="tag">    @<span class="attr">on-ok</span>=<span class="string">"accountUnload"</span></span></div><div class="line"><span class="tag">    <span class="attr">:loading</span>=<span class="string">"uploadLoading"</span></span></div><div class="line"><span class="tag">    &gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">Model</span>&gt;</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>js</p>
+</blockquote>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"> data() &#123;</div><div class="line">     <span class="keyword">return</span> &#123;</div><div class="line">         syncUploadPop: <span class="literal">false</span>,      <span class="comment">// 弹出款默认不显示</span></div><div class="line">         uploadLoading: <span class="literal">true</span>        <span class="comment">// 上传中</span></div><div class="line">     &#125;</div><div class="line"> &#125;</div><div class="line">methods: &#123;</div><div class="line">    <span class="keyword">async</span> accountUnload() &#123;</div><div class="line"></div><div class="line">        <span class="keyword">this</span>.uploadLoading = <span class="literal">true</span>   <span class="comment">// 确定点击显示 加载中、、、</span></div><div class="line"></div><div class="line">        <span class="keyword">let</span> res = <span class="keyword">await</span> request.post(InterObj.accountUnloadTo, params)</div><div class="line">        <span class="keyword">this</span>.uploadLoading = <span class="literal">false</span>  <span class="comment">// 请求成功取消 加载中、、、</span></div><div class="line"></div><div class="line">        <span class="comment">// -------解决问题的核心代码------</span></div><div class="line">        <span class="keyword">this</span>.$nextTick(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</div><div class="line">            <span class="keyword">this</span>.uploadLoading = <span class="literal">true</span></div><div class="line">        &#125;)</div><div class="line">        <span class="comment">// -------解决问题的核心代码------</span></div><div class="line"></div><div class="line">        <span class="keyword">if</span>(res.result === <span class="string">'success'</span>) &#123;</div><div class="line">            <span class="keyword">this</span>.$Message.success(res.msg)</div><div class="line">            <span class="keyword">this</span>.syncUploadPop = <span class="literal">false</span></div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            <span class="keyword">this</span>.$Message.error(res.msg)</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p> <strong>总结：</strong> <code>:loading</code>设置成false取消 加载中状态后，需要在线程最后依然将 他设置为<code>true</code></p>
 
       
     </div>
@@ -292,17 +305,17 @@
   
     
     <div class="copyright">
-        <p><span>本文標題:</span><a href="/2017/11/08/vue-study-iview/">iview组件使用的踩坑记录</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主頁">long lee</a></p>
-        <p><span>發布時間:</span>2017-11-08, 16:03:39</p>
-        <p><span>最後更新:</span>2017-11-15, 09:58:57</p>
+        <p><span>本文标题:</span><a href="/2017/11/08/vue-study-iview/">iview组件使用的踩坑记录</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">long lee</a></p>
+        <p><span>发布时间:</span>2017-11-08, 16:03:39</p>
+        <p><span>最后更新:</span>2017-11-16, 18:39:55</p>
         <p>
-            <span>原始鏈接:</span><a class="post-url" href="/2017/11/08/vue-study-iview/" title="iview组件使用的踩坑记录">https://dale426.github.io/2017/11/08/vue-study-iview/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://dale426.github.io/2017/11/08/vue-study-iview/　　作者: long lee" title="點擊複製文章鏈接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/11/08/vue-study-iview/" title="iview组件使用的踩坑记录">https://dale426.github.io/2017/11/08/vue-study-iview/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://dale426.github.io/2017/11/08/vue-study-iview/　　作者: long lee" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>許可協議:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"姓名標示-非商業性-相同方式分享 4.0 國際"</a> 轉載請保留原文鏈接及作者。
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
         </p>
     </div>
 
@@ -329,9 +342,9 @@
 </article>
 
     <div id="toc" class="toc-article">
-        <strong class="toc-title">文章目錄</strong>
+        <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#级联选择起的校验"><span class="toc-number">1.</span> <span class="toc-text">级联选择起的校验</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#html"><span class="toc-number">1.1.</span> <span class="toc-text">html</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#javascript"><span class="toc-number">1.2.</span> <span class="toc-text">javascript</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#检验地址控件的方法"><span class="toc-number">1.3.</span> <span class="toc-text">检验地址控件的方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#iview中tabs的使用"><span class="toc-number">2.</span> <span class="toc-text">iview中tabs的使用</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#级联选择起的校验"><span class="toc-number">1.</span> <span class="toc-text">级联选择起的校验</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#html"><span class="toc-number">1.1.</span> <span class="toc-text">html</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#javascript"><span class="toc-number">1.2.</span> <span class="toc-text">javascript</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#检验地址控件的方法"><span class="toc-number">1.3.</span> <span class="toc-text">检验地址控件的方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#iview中tabs的使用"><span class="toc-number">2.</span> <span class="toc-text">iview中tabs的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#iview中Model弹窗二次点击依然会关闭问题"><span class="toc-number">3.</span> <span class="toc-text">iview中Model弹窗二次点击依然会关闭问题</span></a></li></ol>
         
     </div>
     <style>
@@ -345,10 +358,10 @@
         }
     </style>
 
-    <input type="button" id="tocButton" value="隱藏目錄"  title="點擊按鈕隱藏或者顯示文章目錄">
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
     <script>
-        yiliaConfig.toc = ["隱藏目錄", "顯示目錄", !!"false"];
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
     </script>
 
 
@@ -401,7 +414,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/11/14/move-review-liechang/">经过了这么多年的努力，理想终于成了泡影---猎场经典台词</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/10/live-Summer-Remix/">我和秋天有个约会</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/09/vue-study-03/">vue组件的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/08/vue-study-iview/">iview组件使用的踩坑记录</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/08/contribute-word-001/">每日单词 perception [pə'sepʃ(ə)n]</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/07/vue-study-computed/">vue中的计算属性 computed</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/07/array-method-01/">每个JavaScript程序员都需要知道的5个数组方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/07/js-call/">javascript之call的用法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/live-tulei-01/">我忘记了自己，却没忘记你！</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/31/hexo-command/">hexo 命令集合</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/31/hexo/">test</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/03/first-on-hexo/">first- on - githubpage</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/11/24/time-manage/">阮一峰：时间管理的七句话</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/16/contribute-word-002/">每日单词 depth 英 [depθ]</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/14/move-review-liechang/">经过了这么多年的努力，理想终于成了泡影---猎场经典台词</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/10/live-Summer-Remix/">我和秋天有个约会</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/09/vue-study-03/">vue组件的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/08/vue-study-iview/">iview组件使用的踩坑记录</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/08/contribute-word-001/">每日单词 perception [pə'sepʃ(ə)n]</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/07/vue-study-computed/">vue中的计算属性 computed</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/07/array-method-01/">每个JavaScript程序员都需要知道的5个数组方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/07/js-call/">javascript之call的用法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/live-tulei-01/">我忘记了自己，却没忘记你！</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/31/hexo-command/">hexo 命令集合</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/31/hexo/">test</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/03/first-on-hexo/">first- on - githubpage</a></li></ul>
 
 
 
@@ -418,14 +431,14 @@
                 2017 long lee
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、簡潔且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="簡而不減 Hexo 雙欄博客主題  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="本站到訪數"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
@@ -434,7 +447,7 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本頁閱讀量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -467,9 +480,9 @@
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回頂部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看評論"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="轉到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window

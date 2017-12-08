@@ -4,6 +4,66 @@
 
     
   <url>
+    <loc>https://dale426.github.io/2017/11/24/time-manage/</loc>
+    <lastmod>2017-11-24T02:10:11.749Z</lastmod>
+    <data>
+        <display>
+        <title>阮一峰：时间管理的七句话</title>
+        <pubTime>2017-11-24T01:49:58.000Z</pubTime>
+        
+        <tag>励志</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活" url="https://dale426.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dale426.github.io/2017/11/16/contribute-word-002/</loc>
+    <lastmod>2017-11-16T10:48:47.565Z</lastmod>
+    <data>
+        <display>
+        <title>每日单词 depth 英 [depθ]</title>
+        <pubTime>2017-11-16T10:47:45.000Z</pubTime>
+        
+        <tag>单词</tag>
+         
+         
+           
+             
+              <breadCrumb title="每日单词" url="https://dale426.github.io/categories/%E6%AF%8F%E6%97%A5%E5%8D%95%E8%AF%8D/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dale426.github.io/2017/11/08/vue-study-iview/</loc>
+    <lastmod>2017-11-16T10:39:55.326Z</lastmod>
+    <data>
+        <display>
+        <title>iview组件使用的踩坑记录</title>
+        <pubTime>2017-11-08T08:03:39.000Z</pubTime>
+        
+        <tag>iview组件</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue框架" url="https://dale426.github.io/categories/vue%E6%A1%86%E6%9E%B6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://dale426.github.io/2017/11/14/move-review-liechang/</loc>
     <lastmod>2017-11-15T08:23:16.290Z</lastmod>
     <data>
@@ -19,26 +79,6 @@
            
              
               <breadCrumb title="影视" url="https://dale426.github.io/categories/%E5%BD%B1%E8%A7%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dale426.github.io/2017/11/08/vue-study-iview/</loc>
-    <lastmod>2017-11-15T01:58:57.433Z</lastmod>
-    <data>
-        <display>
-        <title>iview组件使用的踩坑记录</title>
-        <pubTime>2017-11-08T08:03:39.000Z</pubTime>
-        
-        <tag>iview组件</tag>
-         
-         
-           
-             
-              <breadCrumb title="vue框架" url="https://dale426.github.io/categories/vue%E6%A1%86%E6%9E%B6/"/>
           
         </display>
     </data>
