@@ -4,7 +4,6 @@
 
     
     
-    
   <url>
     <loc>https://dale426.github.io/2017/11/24/others/time-manage/</loc>
     <lastmod>2018-03-29T10:25:31.372Z</lastmod>
@@ -19,6 +18,29 @@
            
              
               <breadCrumb title="生活" url="https://dale426.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>https://dale426.github.io/2017/11/14/others/move-review-liechang/</loc>
+    <lastmod>2018-03-29T10:25:31.371Z</lastmod>
+    <data>
+        <display>
+        <title>经过了这么多年的努力，理想终于成了泡影---猎场经典台词</title>
+        <pubTime>2017-11-14T05:33:59.000Z</pubTime>
+        
+        <tag>电视剧</tag>
+         
+        <tag>经典台词</tag>
+         
+         
+           
+             
+              <breadCrumb title="影视" url="https://dale426.github.io/categories/%E5%BD%B1%E8%A7%86/"/>
           
         </display>
     </data>
@@ -46,34 +68,27 @@
 
     
   <url>
-    <loc>https://dale426.github.io/2017/11/14/others/move-review-liechang/</loc>
-    <lastmod>2018-03-29T10:25:31.371Z</lastmod>
-    <data>
-        <display>
-        <title>经过了这么多年的努力，理想终于成了泡影---猎场经典台词</title>
-        <pubTime>2017-11-14T05:33:59.000Z</pubTime>
-        
-        <tag>电视剧</tag>
-         
-        <tag>经典台词</tag>
-         
-         
-           
-             
-              <breadCrumb title="影视" url="https://dale426.github.io/categories/%E5%BD%B1%E8%A7%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://dale426.github.io/2017/10/31/others/hexo/</loc>
     <lastmod>2018-03-29T10:25:31.369Z</lastmod>
     <data>
         <display>
         <title>test</title>
         <pubTime>2017-10-30T16:00:00.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dale426.github.io/2017/10/31/others/hexo-command/</loc>
+    <lastmod>2018-03-29T10:25:31.369Z</lastmod>
+    <data>
+        <display>
+        <title>hexo 命令集合</title>
+        <pubTime>2017-10-31T05:55:00.000Z</pubTime>
         
          
            
@@ -98,41 +113,6 @@
          
          
            
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dale426.github.io/2017/10/31/others/hexo-command/</loc>
-    <lastmod>2018-03-29T10:25:31.369Z</lastmod>
-    <data>
-        <display>
-        <title>hexo 命令集合</title>
-        <pubTime>2017-10-31T05:55:00.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dale426.github.io/2017/11/07/js/array/js-call/</loc>
-    <lastmod>2018-03-29T10:25:31.368Z</lastmod>
-    <data>
-        <display>
-        <title>javascript之call的用法</title>
-        <pubTime>2017-11-07T04:35:00.000Z</pubTime>
-        
-        <tag>js知识点总结</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="https://dale426.github.io/categories/JavaScript/"/>
-          
         </display>
     </data>
     </url>
@@ -179,15 +159,40 @@
 
     
   <url>
-    <loc>https://dale426.github.io/2017/11/09/frame/vue/vue-study-03/</loc>
+    <loc>https://dale426.github.io/2017/11/07/js/array/js-call/</loc>
+    <lastmod>2018-03-29T10:25:31.368Z</lastmod>
+    <data>
+        <display>
+        <title>javascript之call的用法</title>
+        <pubTime>2017-11-07T04:35:00.000Z</pubTime>
+        
+        <tag>js知识点总结</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="https://dale426.github.io/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dale426.github.io/2017/11/08/frame/vue/vue-study-iview/</loc>
     <lastmod>2018-03-29T10:25:31.367Z</lastmod>
     <data>
         <display>
-        <title>vue组件的使用</title>
-        <pubTime>2017-11-09T07:14:27.000Z</pubTime>
+        <title>iview组件使用的踩坑记录</title>
+        <pubTime>2017-11-08T08:03:39.000Z</pubTime>
         
+        <tag>iview组件</tag>
+         
          
            
+             
+              <breadCrumb title="vue框架" url="https://dale426.github.io/categories/vue%E6%A1%86%E6%9E%B6/"/>
+          
         </display>
     </data>
     </url>
@@ -214,20 +219,15 @@
 
     
   <url>
-    <loc>https://dale426.github.io/2017/11/08/frame/vue/vue-study-iview/</loc>
+    <loc>https://dale426.github.io/2017/11/09/frame/vue/vue-study-03/</loc>
     <lastmod>2018-03-29T10:25:31.367Z</lastmod>
     <data>
         <display>
-        <title>iview组件使用的踩坑记录</title>
-        <pubTime>2017-11-08T08:03:39.000Z</pubTime>
+        <title>vue组件的使用</title>
+        <pubTime>2017-11-09T07:14:27.000Z</pubTime>
         
-        <tag>iview组件</tag>
-         
          
            
-             
-              <breadCrumb title="vue框架" url="https://dale426.github.io/categories/vue%E6%A1%86%E6%9E%B6/"/>
-          
         </display>
     </data>
     </url>
