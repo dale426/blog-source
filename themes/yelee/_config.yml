@@ -15,6 +15,7 @@ menu:
 
 # Link to your avatar | 填写头像地址
 avatar: /img/avatar.png
+#avatarTop: '/img/yulong.jpg'  # 尺寸 296*260
 
 # Small icon of Your site | 站点小图标地址
 favicon: /favicon.ico
@@ -120,7 +121,7 @@ youyan:
 background_image: 5
 
 # Base Font Size | 字号调节
-base_font_size: 14  #px, 16 - 24
+base_font_size: 16  #px, 16 - 24
 
 ## General Color Scheme | 主题配色方案 
 ## 可用值 Value: yilia
