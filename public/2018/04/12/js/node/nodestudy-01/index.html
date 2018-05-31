@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="long lee" />
+
+
+
+<meta name="description" content="tips: Api写法：Error-first Callback 和 EventEmitter">
+<meta name="keywords" content="node">
+<meta property="og:type" content="article">
+<meta property="og:title" content="node学习（一）">
+<meta property="og:url" content="https://dale426.github.io/2018/04/12/js/node/nodestudy-01/index.html">
+<meta property="og:site_name" content="小虫子426">
+<meta property="og:description" content="tips: Api写法：Error-first Callback 和 EventEmitter">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-04-12T11:09:54.514Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="node学习（一）">
+<meta name="twitter:description" content="tips: Api写法：Error-first Callback 和 EventEmitter">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="小虫子426" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>node学习（一） | 小虫子426</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: true
+    }
+</script>
+
+
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+<!--  -->
+
+
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">long lee</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">一个有情怀的程序员</p>
+        
+
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+        
+
+
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/随笔">随笔</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa 微信" href="/about" title="微信"></a>
+                            
+                                <a class="fa GitHub" href="https://github.com/dale426" title="GitHub"></a>
+                            
+                                <a class="fa 网易云音乐" href="http://music.163.com/#/user/home?id=289526154" title="网易云音乐"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">long lee</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">long lee</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">一个有情怀的程序员</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/随笔">随笔</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa 微信" target="_blank" href="/about" title="微信"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/dale426" title="GitHub"></a>
+                            
+                                <a class="fa 网易云音乐" target="_blank" href="http://music.163.com/#/user/home?id=289526154" title="网易云音乐"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-js/node/nodestudy-01" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/04/12/js/node/nodestudy-01/" class="article-date">
+      <time datetime="2018-04-12T10:27:46.000Z" itemprop="datePublished">2018-04-12</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      node学习（一）
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node/">node</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>tips: Api写法：Error-first Callback 和 EventEmitter<br><a id="more"></a></p>
+<h5 id="a-在node的回调中错误优先"><a href="#a-在node的回调中错误优先" class="headerlink" title="a) 在node的回调中错误优先"></a>a) 在node的回调中错误优先</h5><p>应该先定义错误的返回接收函数</p>
+<ul>
+<li>回调函数的第一个参数返回的error对象，如果error发生了，它会作为第一个err参数返回，如果没有，一般做法是返回null。</li>
+<li>回调函数的第二个参数返回的是任何成功响应的结果数据。如果结果正常，没有error发生，err会被设置为null，并在第二个参数就出返回成功结果数据。</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">err, res</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// process the error and result</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>语义上讲，非空的“err”相当于程序异常；而空的“err”相当于可以正常返回结果“res”，无任何异常。</p>
+<h5 id="b-EventEmitter"><a href="#b-EventEmitter" class="headerlink" title="b) EventEmitter"></a>b) EventEmitter</h5><p>事件模块是 Node.js 内置的对观察者模式“发布/订阅”（publish/subscribe）的实现，通过EventEmitter属性，提供了一个构造函数。该构造函数的实例具有 on 方法，可以用来监听指定事件，并触发回调函数。任意对象都可以发布指定事件，被 EventEmitter 实例的 on 方法监听到。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> EventEmitter = <span class="built_in">require</span>(<span class="string">'events'</span>).EventEmitter</span><br><span class="line"><span class="keyword">var</span> life = <span class="keyword">new</span> EventEmitter()</span><br><span class="line"><span class="comment">// 设置可以添加的事件数量</span></span><br><span class="line">life.setMaxListeners(<span class="number">2</span>)</span><br><span class="line"><span class="comment">// 添加事件</span></span><br><span class="line"><span class="keyword">var</span> water = <span class="function"><span class="keyword">function</span>(<span class="params">who</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">'给'</span> + who + <span class="string">'倒杯水！'</span>)</span><br><span class="line">&#125;</span><br><span class="line">life.on(<span class="string">'求安慰'</span>, water)</span><br><span class="line"></span><br><span class="line">life.on(<span class="string">'求安慰'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">who</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">'给'</span> + who + <span class="string">'做饭！'</span>)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// ... 总共可以添加10个事件 【默认】</span></span><br><span class="line"><span class="comment">// 超出会有报出异常</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 触发事件</span></span><br><span class="line">life.emit(<span class="string">'求安慰'</span>, <span class="string">'汉子'</span>)</span><br><span class="line"><span class="comment">// 事件移除</span></span><br><span class="line"><span class="comment">// 将回调函数具名化 移除某一个事件</span></span><br><span class="line">life.removeListener(<span class="string">'求安慰'</span>, water)</span><br><span class="line"><span class="comment">// 全部移除</span></span><br><span class="line">life.removeAllListeners()</span><br><span class="line"><span class="comment">// 移除某一个事件</span></span><br><span class="line">life.removeListener(<span class="string">'求安慰'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 检测事件是否监听</span></span><br><span class="line"><span class="keyword">var</span> hasLifeListener = life.emit(<span class="string">'求安慰'</span>, <span class="string">''</span>)</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'求安慰事件是否监听:'</span> + hasLifeListener)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 检测事件监听的个数</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'life 上添加的事件数量是:'</span> + life.listeners(<span class="string">'求安慰'</span>).length)</span><br><span class="line"><span class="built_in">console</span>.log(EventEmitter.listenerCount(life, <span class="string">'求安慰'</span>))</span><br></pre></td></tr></table></figure>
+<h5 id="c-buffer"><a href="#c-buffer" class="headerlink" title="c) buffer"></a>c) buffer</h5><p>Buffer： 是一个对象， 是一个构造函数； 实例：V8引擎分配的一段内存；基本是一个数组，整数值；<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Buffer(<span class="number">123</span>)</span><br><span class="line"><span class="comment">//  &lt;Buffer 31 32 33&gt;</span></span><br><span class="line">默认编码格式 utf<span class="number">-8</span></span><br><span class="line"></span><br><span class="line">指定编码：</span><br><span class="line"><span class="keyword">new</span> Buffer(<span class="string">'123'</span>, <span class="string">'base64'</span>)</span><br><span class="line"><span class="comment">// &lt;Buffer d7 6d&gt;</span></span><br><span class="line"></span><br><span class="line">长度：</span><br><span class="line"><span class="keyword">var</span> buf = <span class="keyword">new</span> Buffer(<span class="number">8</span>)   </span><br><span class="line">buf.length   <span class="comment">// 8</span></span><br><span class="line"></span><br><span class="line">限制长度，写入会被截取</span><br><span class="line"><span class="keyword">var</span> buf = <span class="keyword">new</span> Buffer(<span class="number">6</span>)</span><br><span class="line">buf.write(<span class="string">'12345678'</span>)</span><br><span class="line">buf <span class="comment">// &lt;Buffer 31 32 32 33 34 35&gt;   6位 超出不会被缓冲</span></span><br><span class="line"></span><br><span class="line">实例化数组，可以用下表读取到；</span><br><span class="line"><span class="keyword">var</span> buf = <span class="keyword">new</span> Buffer([<span class="number">1</span>,<span class="number">2.22</span>,<span class="number">3</span>])</span><br><span class="line"></span><br><span class="line">buf[<span class="number">0</span>]   <span class="comment">// 1</span></span><br><span class="line">buf[<span class="number">1</span>]   <span class="comment">// 2  [自动取证]</span></span><br></pre></td></tr></table></figure></p>
+<p>buffer转化</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">var</span> buf = <span class="keyword">new</span> Buffer(<span class="string">'12345'</span>)</span><br><span class="line">&gt; <span class="keyword">var</span> str = buf.toString(<span class="string">'base64'</span>)</span><br><span class="line"><span class="comment">//&gt; str  'MTIzNDU='</span></span><br><span class="line"></span><br><span class="line">&gt; <span class="keyword">var</span> buf2 = <span class="keyword">new</span> Buffer(str, <span class="string">'base64'</span>)</span><br><span class="line">&gt; <span class="keyword">var</span> str2 = buf2.toString()</span><br><span class="line"><span class="comment">// &gt; str2  12345</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/04/12/js/node/nodestudy-01/">node学习（一）</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">long lee</a></p>
+        <p><span>发布时间:</span>2018-04-12, 18:27:46</p>
+        <p><span>最后更新:</span>2018-04-12, 19:09:54</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/04/12/js/node/nodestudy-01/" title="node学习（一）">https://dale426.github.io/2018/04/12/js/node/nodestudy-01/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://dale426.github.io/2018/04/12/js/node/nodestudy-01/　　作者: long lee" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2018/05/15/study/study2014-05/">
+                    2018上半年学习资料整理&amp;学习计划[5]
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/04/11/js/react/react-constructor-super/">
+                    理解react中的constructor与super
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#a-在node的回调中错误优先"><span class="toc-number">1.</span> <span class="toc-text">a) 在node的回调中错误优先</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#b-EventEmitter"><span class="toc-number">2.</span> <span class="toc-text">b) EventEmitter</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#c-buffer"><span class="toc-number">3.</span> <span class="toc-text">c) buffer</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"node学习（一）　| 小虫子426　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2018/05/15/study/study2014-05/" title="上一篇: 2018上半年学习资料整理&amp;学习计划[5]">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2018/04/11/js/react/react-constructor-super/" title="下一篇: 理解react中的constructor与super">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/05/31/others/seo/">非大型网站的SEO优化之路</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/15/study/study2014-05/">2018上半年学习资料整理&学习计划[5]</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/12/js/node/nodestudy-01/">node学习（一）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/11/js/react/react-constructor-super/">理解react中的constructor与super</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/08/study/study2018-04/">2018上半年学习资料整理&学习计划[4]</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/30/study/study2018-03/">2018上半年学习资料整理&学习计划[3]</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/06/js/common/parseUrlParams/">获取浏览器url 参数</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/24/others/time-manage/">阮一峰：时间管理的七句话</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/14/others/move-review-liechang/">经过了这么多年的努力，理想终于成了泡影---猎场经典台词</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/09/frame/vue/vue-study-03/">vue组件的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/08/frame/vue/vue-study-iview/">iview组件使用的踩坑记录</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/07/frame/vue/vue-study-computed/">vue中的计算属性 computed</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/07/js/array/array-method-01/">每个JavaScript程序员都需要知道的5个数组方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/07/js/array/js-call/">javascript之call的用法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/others/live-tulei-01/">我忘记了自己，却没忘记你！</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/31/others/hexo-command/">hexo 命令集合</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/31/others/hexo/">hexo配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/03/others/first-on-hexo/">first- on - githubpage</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2017-2018 long lee
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
