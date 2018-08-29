@@ -1,9 +1,0 @@
-User-agent: *
-Allow: /
-Allow: /archives
-
-disallow： /fonts/
-disallow: /vendors/
-
-Sitemap: https://dale426.github.io/sitemap.xml
-Sitemap: https://dale426.github.io/baidusitemap.xml
