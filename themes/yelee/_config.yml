@@ -9,7 +9,7 @@ Yelee: "3.5"
 menu:
   主页: /
   所有文章: /archives/
-  随笔: /tags/随笔
+  # 随笔: /other/
   标签云: /tags/
   关于我: /about/
 
@@ -295,7 +295,7 @@ reward_type: 2
 # 打赏wording
 reward_wording: '谢谢你请我吃糖果'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-alipay: ''
+alipay: '/img/avatar.png'
 # 微信二维码图片地址
 weixin: 'wechat.jpg'
 

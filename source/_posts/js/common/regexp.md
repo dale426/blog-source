@@ -145,7 +145,11 @@ var reg = /H(?=i)/g;
 var newStr = str.replace(reg, "T");
 //输出： Hello, Ti, I am Tilary.
 ```
-
+### 一个强大的正则可视化工具
+工具传送门： [RegExper](https://regexper.com/)
+效果如下： 
+![regexper](/public_s/images/regexper.png)
+这样的正则表达式是不是清晰多了~~~ 
 ### 后记
 
 正则表达式基础属性大概就这多了，下一节将继续分析正则表达式的对象属性~~
