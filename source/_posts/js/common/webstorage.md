@@ -7,24 +7,18 @@ date: 2018-09-21 14:22:11
 摘要： localStorage、sessionStorage、cookie的用法以及区别
 <!-- more -->
 ### localStorage的优势与用法
+- localStorage拓展了cookie的4K限制
+- localStorage会可以将第一次请求的数据直接存储到本地，这个相当于一个5M大小的针对于前端页面的数据库，相比于cookie可以节约带宽，但是这个却是只有在高版本的浏览器中才支持的;
 
-1、localStorage拓展了cookie的4K限制
-
-2、localStorage会可以将第一次请求的数据直接存储到本地，这个相当于一个5M大小的针对于前端页面的数据库，相比于cookie可以节约带宽，但是这个却是只有在高版本的浏览器中才支持的
-
-localStorage的局限
+#### localStorage的局限
 
 1、浏览器的大小不统一，并且在IE8以上的IE版本才支持localStorage这个属性
-
 2、目前所有的浏览器中都会把localStorage的值类型限定为string类型，这个在对我们日常比较常见的JSON对象类型需要一些转换
-
 3、localStorage在浏览器的隐私模式下面是不可读取的
-
 4、localStorage本质上是对字符串的读取，如果存储内容多的话会消耗内存空间，会导致页面变卡
-
 5、localStorage不能被爬虫抓取到
 
-localStorage与sessionStorage的唯一一点区别就是localStorage属于永久性存储，而sessionStorage属于当会话结束的时候，sessionStorage中的键值对会被清空
+    localStorage与sessionStorage的唯一一点区别就是localStorage属于永久性存储，而sessionStorage属于当会话结束的时候，sessionStorage中的键值对会被清空
 
 #### localStorage的写入方法
 
@@ -69,7 +63,7 @@ var storage = window.localStorage
 3. 重新打开相同域名时tab时，sessionStorage是不会被共享的
 
 
-### cookie
+### cookie概念和使用方法
 
 #### cookie的基本概念
 - cookie数据始终在同源的http请求中携带（即使不需要），即cookie在浏览器和服务器间来回传递。cookie数据还有路径（path）的概念，可以限制cookie只属于某个路径下
@@ -78,8 +72,10 @@ var storage = window.localStorage
 - 安全secure=true是只在ssl或者https安全协议下传输
 - HttpOnly=true时，禁止通过js脚本获取cookie；防止xss攻击
 - 每个域名下的cookie 的大小最大为4KB，最多20个
+
 #### cookie的使用
-> cookie的设置
+##### cookie的设置
+
 ```js
     function setCookie(cname,cvalue,exdays)
         {
@@ -89,7 +85,7 @@ var storage = window.localStorage
         document.cookie = cname + "=" + cvalue + "; " + expires;          //创建一个cookie
         }
 ```
-> cookie的读取
+##### cookie的读取
 ```js
     function getCookie(c_name)
     {
@@ -108,8 +104,8 @@ var storage = window.localStorage
     }
 
 ```
-> cookie的删除
-将cookie的有效时间改成昨天。
+##### cookie的删除
+    将cookie的有效时间改成昨天。
 
 ### 总结
 

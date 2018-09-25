@@ -22,12 +22,16 @@ tips: 总结微信小程序开发过程中遇到的一些坑
 
 可以通过image标签和其他元素层叠来实现背景图，使用 `position：absolute`定位层叠；
 
-小技巧：
+****
+
+##### 小技巧：
 
 实现如图效果：
 ![图片](/public_s/images/menu.saveimg.savepath20180920175019.jpg)
 采用元素溢出，和`position:relative`定位来实现
-> html
+
+** html**
+
 ```html
 <view class='wrap-center-line'>
     <view class='line-bac'>
@@ -35,7 +39,8 @@ tips: 总结微信小程序开发过程中遇到的一些坑
     </view>
     </view>
 ```
-> css
+** css**
+
 ```css
 .wrap-center-line {
   height: 40rpx;
@@ -59,14 +64,15 @@ tips: 总结微信小程序开发过程中遇到的一些坑
 }
 ```
 ##### 动态图片显示
-> 动态改变图片，可以在url中使用双括号的方式来绑定数据
+动态改变图片，可以在url中使用双括号的方式来绑定数据
 
-`<image class="swiper-img" mode='aspectFill' src='../../assets/swiper/{{item}}'></image>`
+    <image class="swiper-img" mode='aspectFill' src='../../assets/swiper/{{item}}'></image>
 
 #### 触发事件传值
 
 在view层绑定事件，将当前视图对应的数据传递到事件中去，方法如下
-> html
+
+
 ```html
     <view bindtab="{{ clickHandle }}" data-batchNumber='{{batchNumber}}'> 点击按钮 </view>
 ```

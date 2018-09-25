@@ -130,7 +130,7 @@ color_scheme:
 highlight_style:
   on: true
   inline_code: 2  # Value: 0 - 9 可选   文本高亮
-  code_block: 4  # Value: 0 - 4         主题选择
+  code_block: 0  # Value: 0 - 4         主题选择
   # Set inline_code to style highlight text
   # Chose a highlight theme for code block
   # 通过 inline_code 切换内置文本高亮样式
@@ -146,7 +146,7 @@ blockquote_style:
 heading_style: 2 # Value: 0 - 2
 
 ## List style type (ul) | 无序列表项标记样式
-list_style: 0  # value: 0 - 12 可选
+list_style: 1  # value: 0 - 12 可选
 
 # 左边栏宽度 px
 left_col_width: 300

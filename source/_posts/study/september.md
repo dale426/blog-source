@@ -14,3 +14,7 @@ tips: september
 #### 富文本编辑器
 
 1. [wangEditor](http://www.wangeditor.com/index.html)
+
+VUE
+
+1.[vuex源码解读-大搜车](https://blog.souche.com/vuex-yuan-ma-jie-xi/)
