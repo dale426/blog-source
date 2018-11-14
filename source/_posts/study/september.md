@@ -17,4 +17,4 @@ tips: september
 
 VUE
 
-1.[vuex源码解读-大搜车](https://blog.souche.com/vuex-yuan-ma-jie-xi/)
+1. [vuex源码解读-大搜车](https://blog.souche.com/vuex-yuan-ma-jie-xi/)

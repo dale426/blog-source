@@ -24,6 +24,28 @@ date: 2018-07-06 11:57:58
 3. [移动端滚动穿透解决方案](https://juejin.im/post/5abf1c69f265da239706fcb8)
 4. [H5手机端开发问题汇总及解决方案](https://yezihaohao.github.io/2018/03/30/H5%E6%89%8B%E6%9C%BA%E7%AB%AF%E5%BC%80%E5%8F%91%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/)
 
+
+
+#### VUE专场
+
+1. [Vue 面试中常问知识点整理](http://web.jobbole.com/95195/)
+2. [JavaScript之实现一个简单的Vue](http://web.jobbole.com/95197/)
+3. [vue与react的区别](https://juejin.im/post/5b8b56e3f265da434c1f5f76)
+4. [Vue 项目里戳中你痛点的问题及解决办法](https://juejin.im/post/5b174de8f265da6e410e0b4e)
+#### Promise
+
+1. [Promise实现原理（附源码）](http://web.jobbole.com/95198/)
+2. [Promise 迷你书](http://liubin.org/promises-book/#ch2-promise-resolve)
+3. [理解 Promise 的工作原理](https://cnodejs.org/topic/569c8226adf526da2aeb23fd)
+4. [Node.js最新技术栈之Promise篇](https://cnodejs.org/topic/560dbc826a1ed28204a1e7de)
+
+#### ES6
+1. [通过示例来学习ES2016, 2017, 2018的新特性](https://blog.fundebug.com/2018/07/17/new_in_es16_17_18/)
+
+#### webpack学习
+1. [webpack小书](http://webpack.wuhaolin.cn/)
+2. [webpack【gitbook】](https://fakefish.github.io/react-webpack-cookbook/index.html)
+
 #### 面试经验
 
 - . [总结了17年初到18年初百场前端面试的面试经验-含答案](https://juejin.im/post/5b44a485e51d4519945fb6b7)
@@ -39,12 +61,3 @@ date: 2018-07-06 11:57:58
 9. [不要再问我跨域的问题了](http://web.jobbole.com/94928/)
 10. []()
 11. []()
-
-#### VUE专场
-
-1. [Vue 面试中常问知识点整理](http://web.jobbole.com/95195/)
-2. [JavaScript之实现一个简单的Vue](http://web.jobbole.com/95197/)
-
-#### Promise
-
-1. [Promise实现原理（附源码）](http://web.jobbole.com/95198/)
