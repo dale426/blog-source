@@ -20,7 +20,11 @@ var search = window.location.search  // 获取从？开始的参数部分
 1. 把字符串作为 URI 进行编码。
 2. 对 / ? : @ & = + $ #  不会转义。
 
-##### 编码 `encodeURIComponent() `  解码 `decodeURICompnent()`
+##### 编码 `encodeURIComponent() `  解码 `decodeURIComponent()`
+```js
+var src = '%2F2018%2F02%2F06%2Fjs%2Fcommon%2FparseUrlParams%2F'
+decodeURIComponent(src) // "/2018/02/06/js/common/parseUrlParams/"
+```
 1. 把字符串作为 URI 组件进行编码。
 2. 不会对 ASCII 字母和数字进行编码，
 3. 也不会对这些 ASCII 标点符号 - _ . ! ~ * ' ( ) 进行编码：

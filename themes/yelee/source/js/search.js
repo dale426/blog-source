@@ -15,7 +15,7 @@ var searchFunc = function(path, search_id, content_id) {
                 return {
                     title: $( "title", this ).text(),
                     content: $("content",this).text(),
-                    url: $( "url" , this).text()
+                    url: decodeURIComponent($( "url" , this).text())
                 };
             }).get();
             var $input = document.getElementById(search_id);
