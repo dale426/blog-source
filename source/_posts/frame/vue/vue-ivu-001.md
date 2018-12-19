@@ -7,7 +7,8 @@ date: 2018-12-13 17:15:14
 摘要: iview表单校验、vue中实现hover效果、vue Render方法使用姿势
 <!-- more -->
 ### iview表单校验
-##### iview在校验select报错
+**1. iview在校验select报错**    
+***
  问题：即使选择了某一项一直报错？;
  原因: iview默认校验数据类型为**String**, 而我们再给select的 :value是`number`类型的;
 
@@ -20,7 +21,7 @@ industryType: [
 ]
 
 ```
-##### 多条件校验， 自定义正则校验
+**2. 多条件校验， 自定义正则校验**
 ```js
 
  contractPhone: [
@@ -29,7 +30,7 @@ industryType: [
 ]
 
 ```
-##### 校验日期，或者城市选择器
+**3. 校验日期，或者城市选择器**
  问题： iview默认校验的数据类型是 String，所以用默认校验，type是不符合的。
  解决： type：data
 ```js
@@ -47,6 +48,24 @@ province:[
     @mouseleave="showCloseIcon(item)"
 </div>
 ```
+
+### iview select  remote模式下，无法清空搜索输入的内容
+当使用remote模式下的select弹窗时， 关闭再显示，无法清空其内容
+
+```html
+<Select
+    class="change-select"
+    v-model="concatCustomer"
+    filterable
+    remote
+    :remote-method="queryCustomerList"
+    :loading="customer_loading"
+    placeholder="请输入客户名称"
+>
+```
+解决方法： 
+`        document.querySelector('.change-select .ivu-select-input').value = ''`
+
 
 ### vue Render方法使用姿势
 iview框架中使用render函数方法：`render:(h,params)=>{}`
