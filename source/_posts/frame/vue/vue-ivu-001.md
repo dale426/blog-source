@@ -68,6 +68,7 @@ province:[
 
 
 ### vue Render方法使用姿势
+> [官方使用文档](https://cn.vuejs.org/v2/guide/render-function.html)
 iview框架中使用render函数方法：`render:(h,params)=>{}`
 > render参数
 ```js
