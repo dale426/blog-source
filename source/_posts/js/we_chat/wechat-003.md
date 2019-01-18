@@ -1,10 +1,10 @@
 ---
-title: 微信小程序开发采坑指南(二)
+title: 微信小程序开发总结(二)
 tags: [小程序]
 categories: [前端开发]
 date: 2018-12-19 15:10:35
 ---
-内容：小程序转发
+内容：小程序转发、小程序组件使用
 <!-- more -->
 ### 小程序转发
 
@@ -61,7 +61,7 @@ Page({
 ```
 
 组件页面接收props
-// <!-- 引用组件的页面模版 -->
+```html
 <view>
   <my-component prop-mydata="{{mydata}}" prop-title="{{mytitle}}">
     <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
@@ -69,6 +69,8 @@ Page({
   </my-component>
   <view>{{title}}</view>
 </view>
+```
+
 ```js
 // 组件js
 Component({
@@ -87,8 +89,4 @@ Component({
     propTitle: String
   },
 })
-```
-```html
-***
-
 ```

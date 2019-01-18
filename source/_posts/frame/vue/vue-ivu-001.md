@@ -8,10 +8,8 @@ date: 2018-12-13 17:15:14
 <!-- more -->
 ### iview表单校验
 **1. iview在校验select报错**    
-***
  问题：即使选择了某一项一直报错？;
  原因: iview默认校验数据类型为**String**, 而我们再给select的 :value是`number`类型的;
-
 **解决方法:** 加入 type: 'number'
 
 ```js
@@ -21,16 +19,36 @@ industryType: [
 ]
 
 ```
-**2. 多条件校验， 自定义正则校验**
+**2. 多条件校验， 正则校验**
 ```js
 
  contractPhone: [
     { required: true, message: "请输入联系电话", trigger: "blur" },
     { type: 'string',pattern: /^1\d{10}$/, message: '联系电话格式有误', trigger: "blur" } // 使用正则表达式
 ]
-
 ```
-**3. 校验日期，或者城市选择器**
+
+
+**3.自定义方法校验**
+
+```js
+provinceArr: [
+    {
+        validator: this.proviinceValidate, // 调用自定义方法 支持异步，比如查重
+        required: true,
+        trigger: "change"
+    }
+]
+proviinceValidate(rule, value, callback) {
+    if (Array.isArray(value) && value.length === 2) {
+        return callback(); // 返回成功校验
+    } else {
+        return callback(new Error("地址不能为空")); // 返回失败校验
+    }
+}
+```
+
+**4. 校验日期，或者城市选择器**
  问题： iview默认校验的数据类型是 String，所以用默认校验，type是不符合的。
  解决： type：data
 ```js
@@ -63,9 +81,7 @@ province:[
     placeholder="请输入客户名称"
 >
 ```
-解决方法： 
-`        document.querySelector('.change-select .ivu-select-input').value = ''`
-
+解决方法： `document.querySelector('.change-select .ivu-select-input').value = ''`
 
 ### vue Render方法使用姿势
 > [官方使用文档](https://cn.vuejs.org/v2/guide/render-function.html)
@@ -76,7 +92,7 @@ render:(h, params) => {
   return h(" 定义的元素 "，{ 元素的性质 }，" 元素的内容"/[元素的内容])
 }
 ```
-example
+简单例子
 ```js
 render: (h, params) => {
     return h('p',
@@ -117,7 +133,7 @@ render: (h, params) => {
 
 
 
-### 完整示例如下
+### 完整iview表单校验、验证、清空方法
 html -> template
 ```html
     <Form :model="formItem" ref="formItem" :rules="formValidate" inline :label-width="84"> <!-- label-width作用于 所有的子formitem  inline行内模式 -->
