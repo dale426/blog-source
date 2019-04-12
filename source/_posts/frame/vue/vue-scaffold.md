@@ -1,5 +1,5 @@
 ---
-title: vue原理学习
+title: vue双向绑定原理学习（2）
 tags: [vue]
 categories: [vue框架]
 date: 2019-04-10 19:32:32
