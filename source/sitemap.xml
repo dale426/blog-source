@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://blog.52yulong.cn/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/archives/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/about/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2019/frame/vue/vue-scaffold2/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/categories/vue%E6%A1%86%E6%9E%B6/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/ES6/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/vue/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2019/frame/vue/vue-scaffold/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2019/js/common/es6-class/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/categories/JavaScript/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/class/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2019/js/node/commonJS/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/node/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/%E6%A8%A1%E5%9D%97%E5%8C%96/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2019/frame/vue/vue-components-life/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/js/common/css%E6%8D%A2%E8%A1%8C%E4%B8%8E%E4%B8%8D%E6%8D%A2%E8%A1%8C/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/CSS/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/js/common/remberUrl/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/categories/%E5%AD%A6%E4%B9%A0/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/categories/%E5%AD%A6%E4%B9%A0/%E7%BD%91%E7%AB%99/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/js/we_chat/wechat-003/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/frame/vue/vue-ivu-001/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/iview%E7%BB%84%E4%BB%B6/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/js/we_chat/wechat-002/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/page/2/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/page/3/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/page/4/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/archives/2019/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/archives/2018/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/archives/page/2/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/archives/page/3/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/archives/page/4/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/index.html</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/categories/%E5%89%8D%E7%AB%AF%E5%88%86%E7%B1%BB%E6%80%BB%E7%BB%93/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/categories/%E5%BD%B1%E8%A7%86/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/categories/%E7%94%9F%E6%B4%BB/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/SEO/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/js%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/localStorage/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/react/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/vue%E5%8E%9F%E7%90%86/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/vue%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/%E5%89%8D%E7%AB%AF%E5%88%86%E7%B1%BB/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/%E5%8A%B1%E5%BF%97/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/%E6%83%85%E6%84%9F/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/%E6%89%B9%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/%E6%95%B0%E7%BB%84/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%82%A8%E5%AD%98/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/%E7%94%B5%E8%A7%86%E5%89%A7/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/%E7%AE%97%E6%B3%95/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/%E7%BB%8F%E5%85%B8%E5%8F%B0%E8%AF%8D/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/tags/%E8%81%94%E8%B0%83%E5%B7%A5%E5%85%B7/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/about/index.html</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/study/study2018-05/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/js/common/webstorage/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/js/we_chat/wechat-001/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/study/september/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/others/bat001/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/js/common/regexp/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/js/common/fiddle001/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/js/common/vuestudy01/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/study/fontknownageMap/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/study/study2014-07/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/others/seo/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/study/study2014-05/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/js/node/nodestudy-01/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/js/react/react-constructor-super/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/study/study2018-04/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/study/study2018-03/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2018/js/common/parseUrlParams/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2017/others/time-manage/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2017/others/move-review-liechang/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2017/frame/vue/vue-study-03/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2017/frame/vue/vue-study-iview/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2017/frame/vue/vue-study-computed/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2017/js/array/array-method-01/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2017/js/array/js-call/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2017/others/live-tulei-01/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2017/others/hexo-command/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/blog/2017/others/hexo/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/archives/2017/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/archives/2018/page/2/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://blog.52yulong.cn/archives/2018/page/3/</loc>
+  <lastmod>2019-04-12T07:59:06+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
