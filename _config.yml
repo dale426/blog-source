@@ -5,7 +5,7 @@
 # Site
 title: 李玉龙的网络日志
 subtitle: 一个有情怀的程序员
-description: 李玉龙,李玉龙的个人博客,小虫子426,小虫子,小虫子的博客日志,李玉龙的网络日志
+description: 李玉龙的网络日志
 author: yulong lee
 language: zh-CN
 timezone:
@@ -77,7 +77,7 @@ pagination_dir: page
 # theme: landscape
 # theme: next
 # theme: yilia
-theme: yelee
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
