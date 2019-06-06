@@ -15,7 +15,7 @@ cache:
 
 # Redefine custom file paths. Introduced in NexT v6.0.2. If commented, will be used default custom file paths.
 # For example, you want to put your custom styles file outside theme directory in root `source/_data`, set `styles: source/_data/styles.styl`
-#custom_file_path:
+# custom_file_path:
   # Default paths: layout/_custom/*
   #head: source/_data/head.swig
   #header: source/_data/header.swig
@@ -24,7 +24,7 @@ cache:
   # Default path: source/css/_variables/custom.styl
   #variables: source/_data/variables.styl
   # Default path: source/css/_mixins/custom.styl
-  #mixins: source/_data/mixins.styl
+  # mixins: source/_data/mixins.styl
   # Default path: source/css/_custom/custom.styl
   #styles: source/_data/styles.styl
 
@@ -92,15 +92,15 @@ footer:
 # CC licenses are available in 39 languages, where you can find the specific and correct abbreviation you need.
 # Valid values of language: deed.zh, deed.fr, deed.de, etc.
 creative_commons:
-  license: by-nc-sa
+  license: zero
   sidebar: false
-  post: false
-  language:
+  post: true
+  language: zh
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
-  enable: false
-  permalink: https://github.com/yourname
+  enable: true
+  permalink: https://github.com/dale426
   title: Follow me on GitHub
 
 
@@ -117,7 +117,7 @@ disable_baidu_transformation: false
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post / page titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, will add site-subtitle to index page, added in main hexo config.
 # subtitle: Subtitle
@@ -169,7 +169,7 @@ menu:
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true
 
 
 # ---------------------------------------------------------------
@@ -197,15 +197,15 @@ site_state: true
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+  GitHub: https://github.com/yourname || github
+  E-Mail: mailto:yourname@gmail.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
-  #Twitter: https://twitter.com/yourname || twitter
+  Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
-  #YouTube: https://youtube.com/yourname || youtube
+  # 163 M: https://youtube.com/yourname || youtube
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
 
@@ -311,7 +311,7 @@ excerpt_description: true
 # Automatically Excerpt (Not recommend).
 # Use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
+  enable: true
   length: 150
 
 # Read more button
@@ -332,7 +332,7 @@ post_meta:
 symbols_count_time:
   separated_meta: true
   item_text_post: true
-  item_text_total: false
+  item_text_total: true
   awl: 4
   wpm: 275
 
@@ -341,14 +341,14 @@ codeblock:
   border_radius:
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result
-    show_result: false
+    show_result: true
     # Style: only 'flat' is currently available, leave it blank if you prefer default theme
     style:
 
 # Use icon instead of the symblo # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Wechat Subscriber
 wechat_subscriber:
@@ -404,7 +404,7 @@ android_chrome_color: "#222"
 safari_rainbow: false
 
 # Optimize the display of scrollbars on webkit based browsers.
-custom_scrollbar: false
+custom_scrollbar: true
 
 # Custom Logo
 # Do not support Scheme Mist currently.

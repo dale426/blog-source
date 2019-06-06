@@ -136,7 +136,11 @@ use_seo = hexo-config('seo');
 .posts-expand .post-title {
   font-size: 1.7em;
 }
+
 .post-body {
+  > p:first-child {
+    text-align: center;
+  }
   h1 {
     font-size: 1.6em;
     border-bottom: 1px solid $body-bg-color;

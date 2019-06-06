@@ -285,7 +285,7 @@
           {{ post.description }}
           <!--noindex-->
           {% if theme.read_more_btn %}
-            <div class="post-button text-center">
+            <div class="post-button text-right">
               <a class="btn" href="{{ url_for(post.path) }}">
                 {{ __('post.read_more') }} &raquo;
               </a>
@@ -296,7 +296,7 @@
           {{ post.excerpt }}
           <!--noindex-->
           {% if theme.read_more_btn %}
-            <div class="post-button text-center">
+            <div class="post-button text-right">
               <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents">
                 {{ __('post.read_more') }} &raquo;
               </a>
@@ -311,7 +311,7 @@
             </p>
           <!--noindex-->
           {% if theme.read_more_btn %}
-            <div class="post-button text-center">
+            <div class="post-button text-right">
               <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents">
                 {{ __('post.read_more') }} &raquo;
               </a>
