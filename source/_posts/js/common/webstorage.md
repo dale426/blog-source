@@ -1,6 +1,6 @@
 ---
 title: 前端储存的种类与方法
-tags: ['浏览器储存', localStorage]
+tags: [js知识点总结]
 categories: [前端开发]
 date: 2018-09-21 14:22:11
 ---

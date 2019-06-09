@@ -2,7 +2,7 @@
 title: vue中的计算属性 computed
 date: 2017-11-07 19:49:48
 description: vue中使用 computed 时，改变对象的属性，vue无法检测到，通常直接改变这个对象的索引；
-tags: [vue知识点]
+tags: [vue]
 categories: [vue框架]
 ---
 ## vue中使用计算属性 computed

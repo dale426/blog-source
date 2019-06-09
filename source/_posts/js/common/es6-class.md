@@ -1,6 +1,6 @@
 ---
 title: ES6-class类与继承
-tags: [class, ES6]
+tags: [ES6]
 categories: [JavaScript]
 date: 2019-03-21 19:39:11
 ---

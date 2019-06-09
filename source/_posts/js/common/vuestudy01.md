@@ -1,6 +1,6 @@
 ---
 title: vue原理学习笔记（一）
-tags: ['vue原理']
+tags: ['vue']
 categories: ['vue框架']
 date: 2018-07-06 14:31:59
 ---
