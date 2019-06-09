@@ -1,8 +1,6 @@
 ---
-title: 小虫子的标签
+title: 分类
 date: 2017-10-20 06:49:50
-type: "tags"
+type: "categories"
 comments: false
 ---
-
-
