@@ -38,9 +38,9 @@ console.log(window.age)  // 'fun-age'
 直接运行这个函数 **`wrap.myfun(); `**
 > 
 执行这个函数后
-1、在`wrap`下面执行`myfun()`后，其中的`this`指向`window`全局的
-2、在`window`全局下面创建了一个 `age`属性，值为 `'fun-age'`
-3、`wrap`中的`age`还是`default`
+1、在wrap下面执行`myfun()`后，其中的this指向window全局的
+2、在window全局下面创建了一个 `age`属性，值为 `'fun-age'`
+3、wrap中的`age`还是default
 
 
 ### 来看个例子 --- B
@@ -62,9 +62,9 @@ console.log(wrap.age)   // 'fun-age'        --发生了变化---
 console.log(window.age)  // 'age is not defined'   --发生了变化---
 ```
 例子B运行时：
-
-> `wrap.obj()`执行后，在执行`fun`时，把`this`， call进去了, 这个`this`是指向`wrap`，所以`fun`执行时其中的`this`指向的是`wrap`，自然改变的就是`wrap`中的`age`，这就是`call`的作用改变了`fun`执行时的上下文；
-
+{% note success %}
+wrap.obj()执行后，在执行`fun`时，把this， call进去了, 这个this是指向`wrap`，所以`fun`执行时其中的this指向的是`wrap`，自然改变的就是`wrap`中的age，这就是`call`的作用改变了`fun`执行时的上下文；
+ {% endnote %}
 好累，反正我是大概懂了他（this）刚才干了什么；
 ***
 那么在我们的coding中，一般什么时候用到call了？
@@ -85,7 +85,7 @@ g1.fun()  // 输出： longlee
 ```
 如果不在student函数中执行 call，new出来的实例是没有fun属性方法的；打call就可以实现继承Person方法了；
 ### 判断数据的类型 
-> 【object、 array、 null】
+【object、 array、 null】
 ```js
 var obj1 = {name: 'longlee'}
 var obj2 = ['longlee']

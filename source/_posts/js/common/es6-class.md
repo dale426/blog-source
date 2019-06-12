@@ -32,8 +32,9 @@ tips: js继承探究之class
     }
 ```
 ### 类生成实例
-> import { example, calc } from '../../utils/class_example.js';
-
+```js
+import { example, calc } from '../../utils/class_example.js';
+```
     * class example类，【假装相当于是一个构造函数】
     * 这个类【假构造函数】是有另外一个真的构造函数 constructor生成
     * 这个类【假构造函数】中的方法其实是挂载在自身prototype上的；
@@ -61,8 +62,9 @@ tips: js继承探究之class
     console.log('example.prototype.constructor === example', example.prototype.constructor === example); // true                              
 ```
 ### 继承的类生成的实例
-> import { example, calc } from '../../utils/class_example.js';
-
+```js
+import { example, calc } from '../../utils/class_example.js';
+```
 ```js
     let myClass = new calc(10, 56);
     console.log('myClass', myClass);
