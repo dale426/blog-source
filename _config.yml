@@ -6,9 +6,9 @@
 title: 小虫子的网络日志
 subtitle: 一个有情怀的程序员
 description: 小虫子的网络日志
-author: yulong lee
+author: yulong Lee
 language: zh-CN
-timezone:
+timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
