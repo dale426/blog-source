@@ -1,7 +1,7 @@
 ---
 title: 微信小程序开发采坑指南（一）
-tags: [小程序]
-categories: [前端开发]
+tags: [微信小程序]
+categories: [小程序]
 date: 2018-09-20 17:33:18
 ---
 tips: 小程序背景图使用、动态图片、触发事件， iconfont使用

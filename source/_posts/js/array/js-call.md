@@ -2,7 +2,7 @@
 title: javascript之call的用法
 date: 2017-11-07 12:35:00
 description: "从零来理解javascript中的call的用法"
-tags: [js知识点总结]
+tags: [JS基础]
 categories: [JavaScript]
 ---
 ## 正文开始

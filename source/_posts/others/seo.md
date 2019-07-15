@@ -1,7 +1,7 @@
 ---
 title: 非大型网站的SEO优化之路
 tags: [SEO]
-categories: [学习]
+categories: [JavaScript]
 date: 2018-05-31 15:57:16
 ---
 网站常用的SEO优化方式

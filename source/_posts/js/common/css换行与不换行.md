@@ -1,7 +1,7 @@
 ---
 title: css换行与不换行
 tags: [CSS]
-categories: [前端开发]
+categories: [CSS]
 date: 2018-12-20 19:36:25
 ---
 摘要：css实现换行与不换行

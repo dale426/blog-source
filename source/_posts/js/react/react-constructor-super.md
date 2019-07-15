@@ -1,7 +1,7 @@
 ---
 title: 理解react中的constructor与super
 tags: ['react']
-categories: ['JavaScript']
+categories: ['react框架']
 date: 2018-04-11 17:45:27
 ---
 

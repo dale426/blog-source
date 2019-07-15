@@ -1,7 +1,7 @@
 ---
 title: 前端知识地图
-tags: [前端分类]
-categories: [前端分类总结]
+tags: [面试]
+categories: [JavaScript]
 date: 2018-07-06 11:57:58
 ---
 分类整理前端开发的一些知识点

@@ -1,6 +1,8 @@
 title: hexo书写语法
 date: 2017-10-31 00:00:00
-description: "Welcome to Hexo! This is your very first post."
+tags: [博客]
+categories: [学习]
+description: "hexo的创建页面命令、内置的标签"
 ---
 <Contents>
 

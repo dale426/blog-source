@@ -1,7 +1,7 @@
 ---
 title: 前端储存的种类与方法
-tags: [js知识点总结]
-categories: [前端开发]
+tags: [前端存储]
+categories: [JavaScript]
 date: 2018-09-21 14:22:11
 ---
 摘要： localStorage、sessionStorage、cookie的用法以及区别

@@ -1,7 +1,7 @@
 ---
 title: 正则基础属性手册
 tags: ['正则表达式']
-categories: ['前端开发']
+categories: ['JavaScript']
 date: 2018-09-01 13:11:31
 ---
 摘要: 一堆的符号加字符数字是如何进行匹配的呢~~
