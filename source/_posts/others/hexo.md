@@ -33,4 +33,8 @@ description: "hexo的创建页面命令、内置的标签"
 {% note warning %} warning... {% endnote %}
 {% note danger %} danger... {% endnote %}
 
-
+```shell
+# 添加代码文件方法 -- 默认目录在 downloads/code 下；
+{% include_code appjs lang:javascript cssbreak.html %}  
+{% iframe http://localhost:4000/downloads/code/cssbreak.html 600 600 %}  # 插入ifram方法
+```
