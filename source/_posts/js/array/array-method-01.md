@@ -2,7 +2,7 @@
 title: 每个JavaScript程序员都需要知道的5个数组方法
 date: 2017-11-7 15:16:00
 description: "操作数组的5个方法，forEach、map、filter、indexOf、every"
-tags: [js知识点总结]
+tags: [数组]
 categories: [JavaScript]
 ---
 ### Array.forEach()

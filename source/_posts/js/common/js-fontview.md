@@ -1,7 +1,7 @@
 ---
 title: 一些简单的算法题
-tags: ["算法", "js知识点总结"]
-categories: ["前端开发"]
+tags: ["算法"]
+categories: ["JavaScript"]
 date: 2019-06-06 13:14:00
 ---
 

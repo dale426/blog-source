@@ -6,6 +6,7 @@
     "version": "3.7.1"
   },
   "scripts": {
+    "dev":"hexo generate --watch",
     "start": "hexo clean && hexo server",
     "build": "hexo clean && hexo g -d"
   },

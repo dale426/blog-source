@@ -1,6 +1,6 @@
 ---
 title: javascript模块化
-tags: ['js知识点总结','node']
+tags: ['node']
 categories: [JavaScript]
 date: 2019-03-21 17:07:27
 ---

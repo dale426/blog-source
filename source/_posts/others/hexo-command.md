@@ -2,6 +2,8 @@
 title: hexo 命令集合
 date: 2017-10-31 13:55:00
 description: "hexo 操作的一些命令"
+tags: [博客]
+categories: [学习]
 ---
 
 

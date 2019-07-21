@@ -2,7 +2,7 @@
 title: 移动端 H5 开发问题汇总
 date: 2019-06-14 10:25:22
 tags: [h5]
-categories: [移动端]
+categories: [html]
 ---
 各个大佬的h5开发问题总结以及解决方案
 <!-- more -->

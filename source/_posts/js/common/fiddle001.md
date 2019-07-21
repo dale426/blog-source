@@ -1,7 +1,7 @@
 ---
 title: 前后端联调工具之-Fiddler
-tags: ["联调工具"]
-categories: ["前端开发"]
+tags: ["fiddler"]
+categories: ["其他"]
 date: 2018-09-01 12:55:49
 ---
 
