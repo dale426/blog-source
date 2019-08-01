@@ -50,7 +50,35 @@ const fn = (function() {
   };
 })();
 ```
+3. 优化使用函数柯里化
+```js
+var currying = function (fn) {
+  var args = []
+  return function() {
+    if (arguments.length) {
+      [].push.apply(args, arguments);
+      return arguments.callee
+    } else {
+      var arg2 = [...args];
+      args=length = 0; // 成功计算一次后 清除闭包中保存的数
+      return fn.apply(this, arg2)   
+    }
+  }
+}
 
+// 求乘积
+var mul = (function () {
+  return function() {
+    return [].reduce.call(arguments, (total, next, index) => {
+      return total * next
+    }, 1)
+  }
+})();
+
+var fn = currying(mul);
+
+fn(5)(2)()   // 10
+```
 ### 第二题
 
 查找字符串 b 是否在字符串 a 中， 前提， 不能用 slice splice subString 正则；
