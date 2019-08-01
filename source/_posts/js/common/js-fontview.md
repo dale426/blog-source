@@ -60,7 +60,7 @@ var currying = function (fn) {
       return arguments.callee
     } else {
       var arg2 = [...args];
-      args=length = 0; // 成功计算一次后 清除闭包中保存的数
+      args.length = 0; // 成功计算一次后 清除闭包中保存的数
       return fn.apply(this, arg2)   
     }
   }
