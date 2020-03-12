@@ -1,6 +1,6 @@
 ---
 title: CSS变量
-tags: ['css']
+tags: ['CSS']
 categories: ['CSS']
 date: 2019-08-15 16:59:45
 ---
